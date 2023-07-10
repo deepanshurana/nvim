@@ -6,5 +6,5 @@ M.ui = {
 
 }
 --custom plugins
---M.plugins = 'custom.plugins'
+M.plugins = 'custom.plugins'
 return M
