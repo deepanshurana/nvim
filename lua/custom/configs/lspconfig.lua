@@ -9,6 +9,16 @@ local lspconfig = require("lspconfig")
 lspconfig.pyright.setup({
   on_attach = on_attach,
   capabilites = capabilities,
-  filetypes = {"python"}
+  filetypes = {"python"},
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "basic",
+        diagnosticMode = "workspace",
+        autoSearchPaths = true,
+        useLibraryCodeForTypes = true,
+      },
+    }
+  }
 })
 

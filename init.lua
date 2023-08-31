@@ -20,3 +20,4 @@ dofile(vim.g.base46_cache .. "defaults")
 vim.wo.relativenumber = true
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+vim.cmd "AerialPrev"

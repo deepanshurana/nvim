@@ -20,7 +20,7 @@ local default_plugins = {
     branch = "v2.0",
     lazy = false,
     config = function()
-      require "nvchad_ui"
+      -- require "nvchad_ui"
     end,
   },
 
@@ -53,7 +53,7 @@ local default_plugins = {
   {
     "nvim-tree/nvim-web-devicons",
     opts = function()
-      return { override = require("nvchad_ui.icons").devicons }
+      -- return { override = require("nvchad_ui.icons").devicons }
     end,
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "devicons")
@@ -105,8 +105,7 @@ local default_plugins = {
           if vim.v.shell_error == 0 then
             vim.api.nvim_del_augroup_by_name "GitSignsLazyLoad"
             vim.schedule(function()
-              require("lazy").load { plugins = { "gitsigns.nvim" } }
-            end)
+              require("lazy").load { plugins = { "gitsigns.nvim" } } end)
           end
         end,
       })
@@ -230,7 +229,6 @@ local default_plugins = {
       vim.g.nvimtree_side = opts.view.side
     end,
   },
-
   {
     "nvim-telescope/telescope.nvim",
     dependencies = "nvim-treesitter/nvim-treesitter",
@@ -274,3 +272,4 @@ if #config.plugins > 0 then
 end
 
 require("lazy").setup(default_plugins, config.lazy_nvim)
+vim.cmd "AerialPrev"

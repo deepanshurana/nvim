@@ -1,7 +1,7 @@
 ---@type ChadrcConfig 
  local M = {}
 M.ui = {
-  theme = 'gruvchad',
+  theme = 'tokyonight',
   transparency = true,
 
 }

@@ -19,8 +19,10 @@ opt.cursorline = true
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.smartindent = true
-opt.tabstop = 2
+opt.tabstop = 4
 opt.softtabstop = 2
+opt.scrolloff = 6
+opt.colorcolumn = "79"
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
